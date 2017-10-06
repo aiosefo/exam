@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+</script>
+    
+<style>
+    .square1, .square2, .square3, .square4, .square5 {
+        width:100px;
+        height: 100px;
+        display: inline-block;
+    }
+    
+    .square1 {
+        background-color:red;
+    }
+    
+    .square2 {
+        background-color: green;
+    }
+    
+    .square3 {
+        background-color: blue;
+    }
+    
+    .square4 {
+        background-color: orange;
+    }
+    
+    .square5 {
+        background-color: purple;
+    }
+    
+    .question{
+        font-family: sans-serif;
+        color: gray;
+        padding-bottom: 50px;
+    }
+    
+    h1 {
+        color: darkorange;
+        font-family: sans-serif;
+    }
+    
+    h3 {
+        color: blue;
+    }
+    
+    #togs {
+        display: block;
+    }
+    
+</style>
+</head>
+<body>
+
+<h1> Simple jQuery activity </h1>
+    
+<div id="instructions">
+    <p>Complete the following tasks.</p>
+</div>
+    
+<div class="question">
+    <h3>1. Hide/Show. Use jQuery to hide each square when you click on it. Then click on button to show them again.</h3>
+    <div id="squares">
+        <div class="square1"></div>
+        <div class="square2"></div>
+        <div class="square3"></div>    
+    </div>
+    
+    <button id="show">Click to show squares.</button>
+</div>
+    
+<div class="question">
+    <h3>2. Toggle. Use jQuery to toggle the square below.</h3>
+    <button id="togs">Toggle</button>
+    <div class="square4"></div> 
+</div>
+    
+<div class="question">
+    <h3>3. Discussion. What is the difference between hide()/show() and toggle()? When would you use one over the other?</h3> 
+</div>
+    
+<div class="question">
+    <h3>4. Apply some animation to the square below. It is up to you what you want to do. You can change its position, size, color, etc.</h3>
+    <div class="square5"></div>
+</div>
+    
+<div class="question">
+    <h3>5. Use the alert method to display an alert message when clicking on the button below.</h3>
+    <button id="alert">Click here</button>
+</div>
+
+    <div class="question">
+    <h3>5. Use the addClass() method to add a separate class to the ".question". Style it differently (eg. change font-size, font color). You will need to add that class to the inline style section above.</h3>
+</div>
+</body>
+</html>
+
